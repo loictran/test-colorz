@@ -31,7 +31,7 @@ J'ai considéré l'affichage desktop à partir de ```$breakpoint-large: 992px;``
 
 ##### HERO
 
-la hauteur de la première section me semblait arbitraire sur les maquettes, j'ai choisi de lui donner 100% de la hauteur de la fenêtre, plutôt qu'une valeur fixe en px.
+La hauteur de la première section me semblait arbitraire sur les maquettes, j'ai choisi de lui donner 100% de la hauteur de la fenêtre, plutôt qu'une valeur fixe en px.
 
 ##### VALEURS & UNITÉS
 
@@ -45,12 +45,12 @@ j'ai dû positionner des éléments et les sortir du flow. j'ai récupéré les 
 
 ##### SECTION "SOME INDISPENSABLES"
 './assets/js/app.js' -> ```app.fixScrollX();```
-J'ai utilisé ce module pour conditionner l'affichage du carousel en fonction du nombre d'items.
+J'ai utilisé ce module pour conditionner l'affichage du carrousel en fonction du nombre d'items.
 
 _problème rencontré :_
 J'ai utilisé une variable déclarée en scss : 
 ``` 
-liine 3 : gutter: 36, //36px from $gutter 'abstracts/variables.scss'
+line 3 : gutter: 36, //36px from $gutter 'abstracts/variables.scss'
 ```
 extraite du fichier ```_vraiables```. Je n'ai pas su la récupérer en js donc on est pas sur la meilleure solution...
 
