@@ -87,14 +87,21 @@
 
 /*X-LARGE*/
 @media #{$query-xl} {
-    .content-header {
-        width: $container-xl;
+    #main-header {
+       
+        & .content-header {
+            width: $container-xl;
+        }
     }
+    
 }
 
 /*XX-LARGE*/
 @media #{$query-xxl} {
-    .content-header {
-        width: $container-xxl;
+    #main-header {
+       
+        & .content-header {
+            width: $container-xxl;
+        }
     }
 }
