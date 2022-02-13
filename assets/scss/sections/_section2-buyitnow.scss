@@ -1,0 +1,37 @@
+/*MOBILE*/
+#section-buy-it {
+    text-align: center;
+}
+
+/*SMALL*/
+@media #{$query-small} {
+   
+}
+
+/*MEDIUM*/
+@media #{$query-medium} {
+
+}
+
+/*LARGE*/
+@media #{$query-large} {
+    #section-buy-it{
+        padding-top: 5.7em;
+        padding-bottom: 3em;
+
+        & .small-paragraph {
+            padding: 0 0 2.3em 0;
+            width: 813px;
+        }
+    }
+}
+
+/*X-LARGE*/
+@media #{$query-xl} {
+
+}
+
+/*XX-LARGE*/
+@media #{$query-xxl} {
+
+}

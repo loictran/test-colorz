@@ -1,0 +1,89 @@
+/*MOBILE*/
+#the-pudique {
+    
+    & .left {
+        background-image: url(../img/rectangle29.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 0;
+        padding-bottom: 111.26%;
+    }
+    & .right {
+        padding: $gutter;
+        & img {
+            width: $gutter;
+        }
+        & h2 {
+            margin-top: .5em;
+            font-size: 22px;
+            line-height: 1.55;
+        }
+        & h2::after {
+            content:'(1)';
+            font-size: 12px;
+            padding-left: .2em;
+            position: relative;
+            top: -10px;
+        }
+        & .small-paragraph {
+            text-align: left;
+            padding-top: .7em;
+        }
+    }
+    
+}
+
+/*SMALL*/
+@media #{$query-small} {
+   
+}
+
+/*MEDIUM*/
+@media #{$query-medium}{
+
+}
+
+/*LARGE*/
+@media #{$query-large} {
+    #the-pudique {
+        display: flex;
+        align-items: center;
+
+        & .left, 
+        & .right {
+            width: 50%;
+        }
+        & .left {
+            padding-bottom: 55.63%;
+        }
+        & .right {
+            
+            & h2 {
+                font-size: 40px;
+                font-weight: 500;
+                line-height: 1.4;
+            }
+            & h2::after {
+                font-size: 15px;
+                top: -25px;
+            }
+        }
+        
+    }
+}
+
+/*X-LARGE*/
+@media #{$query-xl} {
+
+}
+
+/*XX-LARGE*/
+@media #{$query-xxl} {
+    #the-pudique {
+
+        & .right {
+            width: 628px;
+        }
+    }
+}

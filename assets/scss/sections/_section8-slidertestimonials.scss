@@ -1,0 +1,102 @@
+/*MOBILE*/
+#section-slider-testimonials {
+    background-color: $orange-brand;
+    width: 100vw;
+    padding: 3em 0;
+    
+    & .wrapper-testimonials {
+        width: 100%;
+        overflow: hidden;
+
+        & .slider-testimonials {
+            position: relative;
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            transition: all .5s;
+            text-align: center;
+
+            & .slide-testimonials {
+                width: 100%;
+                flex-shrink: 0;
+            }
+            & .testimonial {
+                width: 303px;
+                margin: 0 auto;
+                font-size: 22px;
+                font-weight: 500;
+                line-height: 1.55;
+                color: $white;
+            }
+            & .author {
+                padding-top: 2em;
+                font-size: 16px;
+                line-height: 1.5;
+                color: $white;
+            }
+        }
+    }
+
+    & .bullets-testimonials {
+        display: flex;
+        justify-content: center;
+    }
+    & .bullets-testimonials>* {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: $white;
+        border-radius: 100%;
+        margin: .8em;
+        cursor: pointer;
+    }
+    & .bullet-testimonials-active {
+        background-color: $dark;
+    }
+   
+}
+
+/*SMALL*/
+@media #{$query-small} {
+   
+}
+
+/*MEDIUM*/
+@media #{$query-medium} {
+
+}
+
+/*LARGE*/
+@media #{$query-large} {
+    #section-slider-testimonials {
+        
+        & .wrapper-testimonials {
+    
+            & .slider-testimonials {
+    
+                & .testimonial {
+                    width: 815px;
+                    font-size: 40px;
+                    line-height: 1.4;
+                }
+                & .author {
+                    padding-top: 1.3em;
+                }
+            }
+        }
+    
+        
+       
+    }
+}
+
+/*X-LARGE*/
+@media #{$query-xl} {
+
+}
+
+/*XX-LARGE*/
+@media #{$query-xxl} {
+
+}

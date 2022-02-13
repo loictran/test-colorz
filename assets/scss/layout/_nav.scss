@@ -1,0 +1,54 @@
+/*MOBILE*/
+.main-nav {
+    display: none;
+}
+
+/*SMALL*/
+@media #{$query-small} {
+
+}
+
+/*MEDIUM-*/
+@media #{$query-medium} {
+
+}
+
+/*LARGE*/
+@media #{$query-large} {
+    .main-nav {
+        display: block;
+
+        & ul {
+            display: flex;
+            align-items: center;
+
+            & li {
+                padding-left: 37px;
+
+                & a{
+                    color: $dark;
+                    transition: all .3s;
+                }
+                a:hover{
+                    color: $orange-brand;
+                }
+            }
+            & li:last-child a{
+                color: $white;
+            }
+            li:last-child a:hover{
+                color: $orange-brand;
+            }
+        }
+    }
+}
+
+/*X-LARGE*/
+@media #{$query-xl} {
+
+}
+
+/*XX-LARGE*/
+@media #{$query-xxl} {
+
+}

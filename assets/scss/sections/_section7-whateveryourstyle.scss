@@ -1,0 +1,68 @@
+/*MOBILE*/
+#whatever-your-style {
+    text-align: center;
+    padding-top: 2em;
+    background-color: $background-img;
+
+    & .xl-paragraph {
+        font-size: 30px;
+        color: $dark;
+        padding-bottom:.5em;
+    }
+    & .wrapper-img {
+        position: relative;
+
+        & img {
+            height: calc(60.73/100 * 70vw);
+            vertical-align: top;
+        }
+        & img:first-child {
+            position: absolute;
+            left: 0;
+        }
+        & img:last-child {
+            position: absolute;
+            right: 0;
+        }
+    }
+}
+
+/*SMALL*/
+@media #{$query-small} {
+    #whatever-your-style {
+
+        & .xl-paragraph {
+            width: 359px;
+            margin: 0 auto;
+        }
+        
+    }
+}
+
+/*MEDIUM*/
+@media #{$query-medium} {
+
+}
+
+/*LARGE*/
+@media #{$query-large} {
+    #whatever-your-style {
+        padding-top: 3.5em;
+
+        & .xl-paragraph {
+            width: 814px;
+            font-size: 52px;
+        }
+        
+    }
+}
+
+/*X-LARGE*/
+@media #{$query-xl} {
+
+}
+
+/*XX-LARGE*/
+@media #{$query-xxl} {
+
+}

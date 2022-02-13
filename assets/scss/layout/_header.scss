@@ -1,0 +1,100 @@
+/*MOBILE*/
+#main-header {
+    background-color: $grey-top-picture;
+    padding: 1.9em;
+
+    & .logo {
+        font-size: 24px;
+        font-weight: 500;
+        color: $dark;
+        text-align: center;
+    }
+}
+
+/*SMALL*/
+@media #{$query-small} {
+
+}
+
+/*MEDIUM*/
+@media #{$query-medium} {
+
+}
+
+/*LARGE*/
+@media #{$query-large} {
+    #main-header {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+        background-color: rgba(255, 255, 255, 0);
+        position: fixed;
+        z-index: 9;
+        top: 0;
+        left: 0;
+        transition: all .3s;
+
+        & .content-header {
+            width: $container-large;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & .logo {
+                font-size: 24px;
+                font-weight: 500;
+                color: $dark;
+                transition: all .2s;
+                cursor: pointer;
+            }
+            & .logo:hover {
+                color: $orange-brand;
+                animation: .5s ease-out .2s animLogo;
+                -webkit-animation: .5s ease-out .2s animLogo;
+            }
+            @keyframes animLogo { 
+                0% { 
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.1);
+                }
+                100% {
+                    transform: scale(1);
+                } 
+            }
+            @-webkit-keyframes animLogo { 
+                0% { 
+                    -webkit-transform: scale(1);  
+                }
+                50% {
+                    -webkit-transform: scale(1.1);
+                }
+                100% {
+                    -webkit-transform: scale(1);
+                } 
+            }
+        }
+    }
+    .header-display {
+        background-color: rgba(255,255,255,1) !important;
+        padding: 1em !important;
+    } 
+    
+}
+
+/*X-LARGE*/
+@media #{$query-xl} {
+    .content-header {
+        width: $container-xl;
+    }
+}
+
+/*XX-LARGE*/
+@media #{$query-xxl} {
+    .content-header {
+        width: $container-xxl;
+    }
+}

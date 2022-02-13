@@ -1,0 +1,76 @@
+/*MOBILE*/
+#main-footer {
+    background-color: $background-img;
+    padding-top: 3.75em;
+    padding-bottom: 3.75em;
+    
+    & #logo-footer {
+        width: 132.67px;
+        padding-bottom: 2em;
+        fill: $dark;
+        transition: all .3s;
+    }
+    & #logo-footer:hover {
+        fill: $orange-brand;
+        cursor: pointer;
+    }
+    & .bottom-footer {
+
+        & .col-footer {
+            padding-bottom: 1.25em;
+        }
+        & .col-footer p {
+            text-align: left;
+        }
+        & .footer-info-txt {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+        & #picto-createdtocreate {
+            width: 73px;
+        }
+    }
+}
+
+/*SMALL*/
+@media #{$query-small} {
+
+}
+
+/*MEDIUM*/
+@media #{$query-medium} {
+
+}
+
+/*LARGE*/
+@media #{$query-large} {
+    #main-footer {
+        
+        & .bottom-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            & .infos-footer {
+                display: flex;
+                width: 100%;
+
+                & .col-footer {
+                    width: 25%;
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+/*X-LARGE*/
+@media #{$query-xl} {
+
+}
+
+/*XX-LARGE*/
+@media #{$query-xxl} {
+
+}

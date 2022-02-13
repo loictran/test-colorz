@@ -1,0 +1,104 @@
+/*MOBILE*/
+#modale {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($color: $dark, $alpha: .6);
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    & .card-modale {
+        position: relative;
+        background-color: $white;
+        border-radius: 4px;
+        -webkit-box-shadow: 0px 14px 14px 14px rgba(0,0,0,0.15);
+        -moz-box-shadow: 0px 14px 14px 14px rgba(0,0,0,0.15);
+        box-shadow: 0px 14px 14px 14px rgba(0,0,0,0.15);
+        padding: 2em;
+        width: 80%;
+
+        & .modale-content {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 2em 2em;
+
+            & #close-modale {
+                position: absolute;
+                width: 19.8px;
+                right: 0;
+                top: 0;
+                cursor: pointer;
+            }
+            & #monkey {
+                width: 73px;
+                padding-bottom: 1em;
+            }
+            & h2 {
+                font-size: 22px;
+                padding-bottom: 1em;
+            }
+            & p {
+                font-size: 16px;
+                line-height: 1.55;
+                width: 100%;
+                padding-bottom: 1em;  
+            }
+            & .bold {
+                font-weight: 600;
+            }
+        }
+    }
+    
+}
+
+/*SMALL*/
+@media #{$query-small} {
+
+}
+
+/*MEDIUM*/
+@media #{$query-medium} {
+    
+}
+
+/*LARGE*/
+@media #{$query-large} {
+    #modale {
+    
+        & .card-modale {
+            width: 910px;
+    
+            & .modale-content {
+    
+                & h2 {
+                    width: 595px;
+                    font-size: 40px;
+                }
+                & p {
+                    font-size: 22px;
+                     width: 595px;
+
+                }
+            }
+        }
+        
+    }
+}
+
+/*X-LARGE*/
+@media #{$query-xl} {
+    
+}
+
+/*XX-LARGE*/
+@media #{$query-xxl} {
+    
+}

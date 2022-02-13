@@ -1,0 +1,27 @@
+//abstracts
+@import './abstracts/variables';
+
+//base
+@import './base/reset';
+@import './base/typography';
+
+//components
+@import './components/buttons';
+
+//layout
+@import './layout/footer';
+@import './layout/grid';
+@import './layout/header';
+@import './layout/modale';
+@import './layout/nav';
+
+//sections
+@import './sections/section1-hero';
+@import './sections/section2-buyitnow';
+@import './sections/section3-mostadvanced';
+@import './sections/section4-slider1';
+@import './sections/section5-getready';
+@import './sections/section6-thepudique';
+@import './sections/section7-whateveryourstyle';
+@import './sections/section8-slidertestimonials';
+@import './sections/section9-someindispensables';

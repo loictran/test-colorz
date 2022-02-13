@@ -1,0 +1,34 @@
+/* DIMENSIONS */
+$header-height: 93px;
+$home-hero-height: calc(100vh - $header-height);
+$gutter: 36px; //used in 'js/app.js' as app.gutter
+
+
+/* RESPONSIVE */
+$breakpoint-small: 576px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+$container-small: 540px;
+$container-medium: 720px;
+$container-large: 960px;
+$container-xl: 1140px;
+$container-xxl: 1320px;
+
+$query-small: 'screen and (min-width: #{$breakpoint-small})';
+$query-medium: 'screen and (min-width: #{$breakpoint-medium})';
+$query-large: 'screen and (min-width: #{$breakpoint-large})';
+$query-xl: 'screen and (min-width: #{$breakpoint-xl})';
+$query-xxl: 'screen and (min-width: #{$breakpoint-xxl})';
+
+
+/* COLORZ ;) */
+$orange-brand: #F0380F;
+$white: #fff;
+$dark: #18181B;
+$light-grey: #E4E4E4;
+$background: #E5E5E5;
+$grey-top-picture: #f6f6f6;
+$background-img: #F4F4F4;

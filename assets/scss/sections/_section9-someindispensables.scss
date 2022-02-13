@@ -1,0 +1,110 @@
+/*MOBILE*/
+#section-indispensables {
+    padding-bottom: 3.75em;
+
+    & h2 {
+        text-align: center;
+        padding: 1.5em 0;
+        width: 359px;
+        margin: 0 auto;
+        font-size: 30px;
+        line-height: 1.4;
+    }
+    & .wrapper-some-items {
+        display: flex;
+        width: 100%;
+        overflow-y: scroll;
+        -ms-overflow-style: none;//remove scrollbar IE 10+ 
+        scrollbar-width: none;//remove scrollbar FIREFOX  
+        
+        & .card {
+            margin: 0 $gutter;
+            width: 70%;
+            flex-shrink: 0;
+            padding: 1em 1.5em;
+            border: solid 1px $light-grey;
+            border-radius: 5px;
+            & img {
+                width: 100%;
+            }
+            & .small-paragraph {
+                padding-top: .5em;
+            }
+        }
+        & .card:not(.card:first-child) {
+            margin-left: 0;
+        }
+    }
+    & .wrapper-some-items::-webkit-scrollbar {
+        display: none;//remove scrollbar CHROME 
+    }
+}
+
+/*SMALL*/
+@media #{$query-small} {
+   
+}
+
+/*MEDIUM*/
+@media #{$query-medium} {
+    #section-indispensables {
+        
+        & .wrapper-some-items {
+            
+            & .card {
+                width: 40%
+                
+            }
+        }
+    }
+}
+
+/*LARGE*/
+@media #{$query-large} {
+    #section-indispensables {
+        & h2{
+            font-size: 52px;
+            width: $container-large;
+        }
+        & .wrapper-some-items {
+            width: $container-large;
+            margin: 0 auto;
+            justify-content: space-between;
+
+            & .card {
+                margin: 0;
+                width: 32%;
+            }
+        }
+    }
+}
+
+/*X-LARGE*/
+@media #{$query-xl} {
+    #section-indispensables {
+        & h2{
+            width: 1022px;
+        }
+        & .wrapper-some-items {
+            width: $container-xl;
+
+            & .card {
+                width: 30%;
+            }
+        }
+    }
+}
+
+/*XX-LARGE*/
+@media #{$query-xxl} {
+    #section-indispensables {
+        
+        & .wrapper-some-items {
+            width: $container-xxl;
+
+            & .card {
+                width: 32%;
+            }
+        }
+    }
+}
