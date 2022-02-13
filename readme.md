@@ -6,7 +6,7 @@
 
 _Tout n'était pas explicité sur la maquette, j'ai donc pris des initiatives, qui auraient mérité un brief et quelques échanges avec la ou le chef de projet. Il s'agit donc de choix correspondants à ma vision des "bonnes pratiques" et toujours dans l'idée d'optimiser l'UX._
 
-_De manière générale, je pense l'intégration comme des emplacements "fluides" dans lesquels viennent se ranger les éléments de contenu. Au dela du pixel perfect, il est important que le design s'adapte au contenu et non l'inverse._
+_De manière générale, je conçois la mise en page pour le web de manière "fluide" et toujours au service du contenu. Au dela du pixel perfect, il est important que le design s'adapte aux dimensions de ce contenu et non l'inverse._
 ***
 ### Choix pour l'intégration
 ##### RESPONSIVE
