@@ -23,8 +23,8 @@ const slider = {
             slider.bullets[i].dataset.position = i;
         }
 
+
         slider.resizeWindow(); 
-        
         slider.start();
     },
 
